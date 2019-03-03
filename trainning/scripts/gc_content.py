@@ -7,7 +7,6 @@ def get_base_count(sequence, nucleotide):
     return base
 
 def get_gc_content(sequence):
-    seq = sequence.upper()
     for i in range(0, len(seq)):
         n = get_base_count(seq, 'N')
         g = get_base_count(seq, 'G')
