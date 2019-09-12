@@ -31,7 +31,7 @@ def analysis_window_sized_sequence(sequence, function, window_size=10, step=5):
 
 def get_gc_content_analysis(iter_result):
     for star, end, gc in iter_result:
-        print(star, end, gc)
+        print(star,'\t', end, '\t', gc)
 
 def parse_genome(filename):
     with open(filename, 'r') as fhand:
